@@ -1,0 +1,4 @@
+The plaintexts have no spaces, only a - z encoded as
+0,0,0,0,0, to 1,1,0,0,1,  
+The keystream is the repetition of an English keyword or phrase,
+encoded the same way (only a - z).
