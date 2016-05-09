@@ -75,7 +75,7 @@ public class Encoder_Decoder {
 	public static String rolling_XOR(String key, String plaintext)
 	{
 		String temp = key;
-		while(key.length != plaintext.length)
+		while(key.length < plaintext.length)
 		{
 			temp += key;
 		}
