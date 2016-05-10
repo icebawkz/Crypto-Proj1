@@ -5,6 +5,16 @@ public class Encoder_Decoder {
 	//Alex, this function is used in conjunction with encoder and decoder
 	//functions. This is just a faster way to find what letter the 5 bit
 	//representation corresponds to. 
+
+	public int debug_variable = 1;
+
+	public static void debug(String input)
+	{
+		if(debug_variable)
+			System.out.println(input);
+		return;
+	}
+
 	public static String find_rep(String input)
 	{
 		String output;
@@ -21,7 +31,6 @@ public class Encoder_Decoder {
 		
 		for(int count=0; count<28; count++)
 		{
-			
 			if(value_array[count].equals(input))
 			{
 				output=letter_array[count];
@@ -75,7 +84,7 @@ public class Encoder_Decoder {
 	public static String rolling_XOR(String key, String plaintext)
 	{
 		String temp = key;
-		while(key.length < plaintext.length)
+		while(temp.length < plaintext.length)
 		{
 			temp += key;
 		}
