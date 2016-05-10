@@ -42,7 +42,7 @@ public class Encoder_Decoder {
 		}
 		return null;	
 	}
-	
+	//hiiiii
 	public static String[] turn_into_5array(String input)
 	{
 		
