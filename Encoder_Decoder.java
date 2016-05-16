@@ -81,6 +81,19 @@ public class Encoder_Decoder {
 		}	
 	}
 
+	public static String[] find_length(String input)
+	{
+		String[] key;
+
+		
+		for(int i = 0; i < 25; i++)
+		{
+			toBinary(i);
+			key = i;
+			plaintext = key ^ input;
+		}
+	}
+
 	public static String rolling_XOR(String key, String plaintext)
 	{
 		String temp = key;
