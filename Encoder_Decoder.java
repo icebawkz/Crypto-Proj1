@@ -1,5 +1,3 @@
-import java.util.*;
-
 public class Encoder_Decoder {
 	//Alex, this function is used in conjunction with encoder and decoder
 	//functions. This is just a faster way to find what letter the 5 bit
@@ -181,9 +179,9 @@ public class Encoder_Decoder {
 				
 					return value_array[i];
 			}
+			
 		}
-		
-		return null;
+		return "";
 	}
 	
 	
@@ -246,16 +244,18 @@ public class Encoder_Decoder {
 		//decoder(test2);
 		//string_to_int("00001");
 		//int_to_string(00010);
-		String[] test= new String[26];
+		String[] test = new String[26];
 		
 		
-			create_possibilities("00000", test);
 		
 		
-		/*for(int i=0; i <test.length; i++)
+		for(int i=0; i <26; i++)
 		{
-			System.out.println("Index "+ "" + i + " = " + test[i]);
-		}*/
+		    int input = i_to_bin(i);
+		    String in = int_to_string(input);
+		    System.out.println(in);
+			create_possibilities(in, test);
+		}
 	
 		
 	
