@@ -248,7 +248,16 @@ public class Encoder_Decoder {
 		//int_to_string(00010);
 		String[] test= new String[26];
 		
-		create_possibilities("00001", test);
+		
+			create_possibilities("00000", test);
+		
+		
+		/*for(int i=0; i <test.length; i++)
+		{
+			System.out.println("Index "+ "" + i + " = " + test[i]);
+		}*/
+	
+		
 	
 		
 		
